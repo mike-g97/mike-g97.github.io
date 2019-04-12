@@ -1,0 +1,34 @@
+a{
+  text-decoration: none;
+}
+
+body{
+  background-color: #000000;
+}
+
+header{
+  background-color: #000000;
+  border: 0px;
+  color: #9B00A6;
+  margin: 0px;
+  padding: 5px;
+  text-align: center;
+}
+
+hr{
+    border: 1px solid;
+    border-color: #9B00A6;
+}
+
+nav{
+    border-bottom: 2px;
+    border-color: #9B00A6
+    border-top: 2px;
+    text-align: center;
+}
+
+#footer {
+    background: #000000;
+    color: #9B00A6;
+    text-align: center;
+}
