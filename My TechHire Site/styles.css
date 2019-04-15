@@ -10,8 +10,6 @@ header{
   background-color: #000000;
   border: 0px;
   color: #9B00A6;
-  margin: 0px;
-  padding: 5px;
   text-align: center;
 }
 
@@ -22,7 +20,7 @@ hr{
 
 nav{
     border-bottom: 2px;
-    border-color: #9B00A6
+    border-color: #9B00A6;
     border-top: 2px;
     text-align: center;
 }
