@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <link rel="stylesheet" type="text/css"  href="restaurantStyles.css">
         <title>CodersCafe.com/contact</title>
+        <style>
+            tr{
+              color:red;
+            }
+
+            th{
+              font-size: 20px;
+            }
+        </style>
     </head>
     <body>
       <header>
@@ -10,12 +20,10 @@
 
       <nav>
         <hr />
-            <p>
-              <a href="../My TechHire Site/portfolio.html"><strong>Home</strong></a>
-              <a href="menu.html"><strong>Menu</strong></a>
-              <a href="https://coderscafeblog987298989.wordpress.com/"><strong>Blog</strong></a>
-              <a href="contact.html"><strong>Contact</strong></a>
-            </p>
+            <a href="index.html"><strong>Home</strong></a>
+            <a href="menu.html"><strong>Menu</strong></a>
+            <a href="https://coderscafeblog987298989.wordpress.com/"><strong>Blog</strong></a>
+            <a href="contact.html"><strong>Contact</strong></a>
         <hr />
       </nav>
 
@@ -26,22 +34,22 @@
           <form>
             <table border="1">
               <tr>
-                <td align="right"> Name: </td>
+                <td align="right"><b>Name: </b></td>
                 <td>  <input type="text"> </td>
               </tr>
               <tr>
-                <td align="right"> Email: </td>
+                <td align="right"><b>Email: </b></td>
                 <td>  <input type="text"> </td>
               </tr>
               <tr>
-                <td align="right"> Phone: </td>
+                <td align="right"><b>Phone: </b></td>
                 <td>  <input type="text"> </td>
               </tr>
               <tr>
-                <td align="right"> Reason for Inquiry:</td>
+                <td align="right"><b>Reason for Inquiry: </b></td>
                 <td>
                   <select>
-                    <option value="inquiry"> General Inquiry</option>
+                    <option value="inquiry">General Inquiry</option>
                     <option value="job"> Job Application Request</option>
                     <option value="feedback"> Feedback</option>
                     <option value="other"> Other</option>
@@ -49,24 +57,24 @@
                 </td>
               </tr>
               <tr>
-                <td align="right"> Message:</td>
+                <td align="right"><b>Message: </b></td>
                 <td><textarea rows="6" cols="20"></textarea></td>
               </tr>
               <tr>
-                <td align="right">Have you been to CodersCafe?</td>
+                <td align="right"><b>Have you been to CodersCafe? </b></td>
                 <td>
                   <input type="radio" name="question"> Yes
                   <input type="radio" name="question"> No
                 </td>
               </tr>
               <tr>
-                <td align="right"> When to reach you:</td>
+                <td align="right"><b>When to reach you: </b></td>
                 <td>
-                <input type="checkbox" value="Monday"> M
-                <input type="checkbox" value="Tuesday"> T
-                <input type="checkbox" value="Wednesday"> W
-                <input type="checkbox" value="Thursday"> Th
-                <input type="checkbox" value="Friday"> F
+                <input type="checkbox" value="Monday"><b>M</b>
+                <input type="checkbox" value="Tuesday"><b>T</b>
+                <input type="checkbox" value="Wednesday"><b>W</b>
+                <input type="checkbox" value="Thursday"><b>TH</b>
+                <input type="checkbox" value="Friday"><b>F</b>
               </td>
               </tr>
               <tr>
@@ -80,8 +88,10 @@
 
       <footer>
           <hr />
-          <p>767 Summit Street Brooklyn, NY 11209</p>
-          <p>718-230-9732</p>
+          <center>
+              <p>767 Summit Street Brooklyn, NY 11209</p>
+              <p>718-230-9732</p>
+          </center>
       </footer>
 
     </body>
