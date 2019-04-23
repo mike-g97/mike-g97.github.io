@@ -3,7 +3,11 @@ a{
 }
 
 body{
-  background-color: #000000;
+  background-color: black;
+}
+
+.card-body{
+  background-color: black;
 }
 
 header{
@@ -13,20 +17,58 @@ header{
   text-align: center;
 }
 
+h1{
+  border-color: #551A8B;
+  background: #000;
+  color: #9B00A6;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%
+}
+
 hr{
     border: 1px solid;
     border-color: #9B00A6;
 }
 
-/* nav{
-    border-bottom: 2px;
-    border-color: #9B00A6;
-    border-top: 2px;
-    text-align: center;
-} */
+nav{
+  background-color: #9B00A6;
+  border-top: thin black solid;
+  border-bottom: thin black solid;
+  /* border: 3px solid black; */
+  border-radius: 4px;
+  height: auto;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  text-align: center;
+  width: auto;
+}
 
-footer {
-    background: #000000;
+nav .btn{
+    background-color: #890092;
+    text-align: center;
+}
+
+p{
+  background-color: black;
+  color: #9B00A6;
+}
+
+table{
+  color: black;
+  background-color: #9B00A6;
+}
+
+ul{
+  text-align: center;
+  color: #9B00A6;
+  list-style-type: none;
+}
+
+#footer {
+    background: #000;
     color: #9B00A6;
+    padding-bottom: 12px;
     text-align: center;
 }
