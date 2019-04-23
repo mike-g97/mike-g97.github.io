@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href="styles.css" rel="stylesheet" type="text/css"  />
         <title>Mike's Portfolio</title>
+
+        <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     </head>
     <body>
       <hr />
@@ -11,17 +18,159 @@
             <h1 style="background-color: rgb(51,17,212); border-color: #551A8B; color: #000000; text-align: center; width: 100%">Mikhael Gonzalez's Portfolio</h1>
             <!-- rgb(51,26,217) -->
         </header>
-
-        <nav style="background-color: rgb(51,17,212); border-color: #551A8B; color: #9B00A6; text-align: center; width: 100%">
+        <!-- Pre-Bootstrap HTML  -->
+        <!-- <nav style="background-color: rgb(51,17,212); border-color: #551A8B; color: #9B00A6; text-align: center; width: 100%">
             <a href="../index.html"><strong>Home</strong></a>
             <a href="https://themartianmatrix.home.blog/"><strong>Blog</strong></a>
             <a href="https://github.com/mike-g97/mike-g97.github.io/"><strong>Projects</strong></a>
             <a href="../CODE-ASSESSMENT_Restaurant Site with HTML/index.html"><strong>Restaurant Assessment 1</strong></a>
             <a href="../CODE-ASSESSMENT_Restaurant Site with HTML & CSS/index.html"><strong>Restaurant Assessment 2</strong></a>
-        </nav>
+        </nav> -->
 
-      <section style="text-align: center; margin: 0px; border: 0px; padding: 0px; background-color: rgb(51,26,217)">
-        <!-- <div style="align-content: center; margin: 0; border: 0; padding: 0; background-color: rgb(51,26,217)"> -->
+        <ul class="nav nav-pills">
+          <li class="active"><a data-toggle="pill" href="#home"><strong>Home</strong></a></li>
+          <li><a data-toggle="pill" href="#blog"><strong>Blog</strong></a></li>
+          <li><a data-toggle="pill" href="#projects"><strong>Projects</strong></a></li>
+          <li><a data-toggle="pill" href="#restaurant1"><strong>Restaurant 1</strong></a></li>
+          <li><a data-toggle="pill" href="#restaurant2"><strong>Restaurant 2</strong></a></li>
+        </ul>
+
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+            <h3>HOME</h3>
+            <p>Some content.</p>
+          </div>
+          <div id="blog" class="tab-pane fade">
+            <h3>Blog</h3>
+            <p>Some content</p>
+          </div>
+          <div id="projects" class="tab-pane fade">
+            <h3>Projects</h3>
+            <p>Some content</p>
+          </div>
+          <div id="restaurant1" class="tab-pane fade">
+            <h3>Restaurant 1</h3>
+            <p>Some content</p>
+          </div>
+          <div id="restaurant2" class="tab-pane fade">
+            <h3>Restaurant 2</h3>
+            <p>Some content</p>
+          </div>
+        </div>
+
+        <!-- Bootstrap accordion object container -->
+        <div class="accordion" id="aboutMeAccordion">
+            <!-- Bootstrap card components -->
+            <div class="card">
+              <!-- Bootstrap card header -->
+              <div class="card-header" id="aboutMe">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    About Me
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#aboutMeAccordion">
+                <div class="card-body">
+                  <p>
+                    Hello world, my name is Mikhael Gonzalez. I'm the first born American in my family.
+                    My heritage is a mix of my Colombian and Venezuelan roots. My favorite thing I like
+                    to eat from my culture is Empanadas, a fried type of dough folded into a half moon
+                    and filled with anything from meats to cheese and whatever else you desire.
+                    Since they can be filled with anything sometimes I would imagine they have personality.
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap accordion object container -->
+        <div class="accordion" id="pastExperienceAccordion">
+            <!-- Bootstrap card components -->
+            <div class="card">
+              <!-- Bootstrap card header -->
+              <div class="card-header" id="pastExperience">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
+                    Past Experience
+                  </button>
+                </h5>
+              </div>
+              <!-- Bootstrap card body -->
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#pastExperienceAccordion">
+                <div class="card-body">
+                  <table align="center"; border="3">
+                    <tr>
+                      <td>September 2012 - June 2014</td>
+                      <td>High School Regents Prep, Tutor</td>
+                    </tr>
+
+                    <tr>
+                      <td>February 2014 - June 2014</td>
+                      <td>Flushing House, IT Assistant</td>
+                    </tr>
+
+                    <tr>
+                      <td>September 2012 - November 2014</td>
+                      <td>FIRST FTC Robotics, Robotics Engineer & Team Captain</td>
+                    </tr>
+
+                    <tr>
+                      <td>September 2012 - March 2016</td>
+                      <td>Speedo The Clown Agency</td>
+                    </tr>
+
+                    <tr>
+                      <td>June 2016 - September 2016</td>
+                      <td>Queens Connect Food Handling Program</td>
+                    </tr>
+
+                    <tr>
+                      <td>June 2016 - September 2016</td>
+                      <td>Pac Sun Sales Associate</td>
+                    </tr>
+
+                    <tr>
+                      <td>March 2019 - Present</td>
+                      <td>OpenCode TechHire Apprentice Trainee</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap accordion object container -->
+        <div class="accordion" id="hobbiesAccordion">
+            <!-- Bootstrap card components -->
+            <div class="card">
+              <!-- Bootstrap card header -->
+              <div class="card-header" id="hobbies">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseOne">
+                    Hobbies
+                  </button>
+                </h5>
+              </div>
+              <!-- Bootstrap card body -->
+              <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#hobbiesAccordion">
+                <div class="card-body">
+                  <p>
+                    Hello world, my name is Mikhael Gonzalez. I'm the first born American in my family.
+                    My heritage is a mix of my Colombian and Venezuelan roots. My favorite thing I like
+                    to eat from my culture is Empanadas, a fried type of dough folded into a half moon
+                    and filled with anything from meats to cheese and whatever else you desire.
+                    Since they can be filled with anything sometimes I would imagine they have personality.
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+      <!-- Pre-Bootstrap HTML -->
+      <!-- <section style="text-align: center; margin: 0px; border: 0px; padding: 0px; background-color: rgb(51,26,217)">
           <article id="about">
 
               <h2><em>About Me</em></h2>
@@ -103,13 +252,16 @@
                   <li>Traveling</li>
                 </ul>
           </article>
-      </section>
+      </section> -->
 
       <div id ="footer">
           <hr />
           <p>&copy; 2019 Mikhael Gonzalez. All rights reserved.</p>
       </div>
 
-
+      <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
 </html>
