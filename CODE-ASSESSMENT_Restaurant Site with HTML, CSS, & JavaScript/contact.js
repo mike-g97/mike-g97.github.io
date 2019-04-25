@@ -8,18 +8,19 @@ function submit () {
     var yes = document.getElementById('yesAlert');
     var no = document.getElementById('noAlert');
 
-    if (name.value == false) {
+    if (name.value == "") {
       console.log("name not inputted");
-      alert("Input your name please");
+      alert("Input your name please.");
     }
-    if (email.value == false) {
+    if (email.value == "") {
       console.log("email not inputted");
-      alert("which email is best to contact you");
+      alert("Which email is best to contact you.");
     }
-    if (phone.value == false) {
+    if (phone.value == "") {
       console.log("phone not inputted");
-      alert("write a vaild phone number; no dashes");
+      alert("Write a vaild phone number; no dashes.");
     }else {
       console.log("inputs were made");
+      alert("Thank you for submitting your info!");
     }
 }
