@@ -17,17 +17,26 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
         <style>
-            tr{
-              color:red;
-            }
+        p {
+          color:black;
+          text-align: center;
+          margin-top: 20px;
+        }
+        button {
+          background-color: black;
+          color:white;
+          border:2px solid white;
+          margin-top: 20px;
 
-            th{
-              font-size: 20px;
-            }
+        }
         </style>
+
     </head>
-    <body>
-      <header class="jumbotron">
+    <body style="background-color: #ffc2a2">
+      <noscript>
+        <div class="noJava">Your Javascript is disabled! Please go to your settings and enable Javascript.</div>
+      </noscript>
+      <header class="jumbotron" style="background-color: #ffab80">
           <center><h1><strong>Contact CodersCafe</strong></h1></center>
       </header>
 
@@ -51,7 +60,49 @@
         <center>
           <img src="assets/images-1.png">
 
-          <form>
+          <form class="message" name="message">
+
+                <p class="text2"><b>Name: </b></p>
+                <input type="text" name="name" id="nameAlert">
+
+
+                <p class="text2"><b>Email: </b></p>
+                <td>  <input type="text" name="email" id="emailAlert">
+
+
+                <p class="text2"><b>Phone: </b></p>
+                <input type="number" name="phone" id="phoneAlert">
+
+
+                <!-- <p class="text2"><b>Reason for Inquiry: </b></p>
+                  <select>
+                    <option value="inquiry">General Inquiry</option>
+                    <option value="job"> Job Application Request</option>
+                    <option value="feedback"> Feedback</option>
+                    <option value="other"> Other</option>
+                  </select>
+
+
+                <p class="text2"><b>Message: </b></p>
+                <textarea rows="6" cols="20" name="textspace"></textarea> -->
+
+
+                <p class="text2"><b>Have you been to CodersCafe? </b></p>
+                  <input type="radio" name="question" id="questionAlert"> Yes
+                  <input type="radio" name="question" id="questionAlert"> No
+
+                <p class="text2"><b>When to reach you: </b></p>
+                <input type="checkbox" value="Monday" name="weekday"><b>M</b>
+                <input type="checkbox" value="Tuesday" name="weekday"><b>T</b>
+                <input type="checkbox" value="Wednesday" name="weekday"><b>W</b>
+                <input type="checkbox" value="Thursday" name="weekday"><b>TH</b>
+                <input type="checkbox" value="Friday" name="weekday"><b>F</b>
+                <br />
+
+                <button type="submit" value="Submit" onclick="yourInquiry()">Submit</button>
+          </form>
+
+          <!-- <form>
             <table border="1">
               <tr>
                 <td align="right"><b>Name: </b></td>
@@ -102,7 +153,7 @@
                 <td><input type="submit" value="Submit"></td>
               </tr>
             </table>
-          </form>
+          </form> -->
         </center>
       </section>
 
