@@ -32,6 +32,10 @@ hr{
     border-color: #9B00A6;
 }
 
+img{
+  margin-bottom: -35.875%;
+}
+
 nav{
   background-color: #9B00A6;
   border-top: thin black solid;
